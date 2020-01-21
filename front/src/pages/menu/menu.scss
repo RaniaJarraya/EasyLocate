@@ -1,0 +1,29 @@
+page-menu {
+    .menu{
+        height: 100%;
+        width: 100%;
+        background: #abbaab;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         
+    }
+    
+    .item{
+       
+            background-color: transparent;
+            border:none;   /*Removes all borders*/
+            border-top: 1px solid;   /*Top Border for each menu item*/
+           // border-bottom:2px solid;   /*Bottom border for each menu item*/
+            border-color: #666;   /*Sets colors for top and bottom border*/
+          //  color: white;    /*Text color for each item*/
+          border: medium none;
+        
+    }
+    .logout{
+        margin-top:210px;
+        border-color: rgb(255, 252, 252);   /*Sets colors for top and bottom border*/
+        border-top:2px solid;   /*Top Border for each menu item*/
+        border-bottom:2px solid;   /*Bottom border for each menu item*/
+    }
+   
+}

@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Add New User </ion-title>
+    </ion-navbar>
+    </ion-header>
+ 
+<ion-content class="login-content" padding>
+    <ion-card>
+        <ion-card-content>
+  <div class="login-box">
+     
+      <ion-item>
+          <ion-label fixed>Picture</ion-label>
+          <ion-avatar item-end>
+            <img src="{{imgPreview}}" (click)="getPhoto()">
+          </ion-avatar>
+        </ion-item>
+        <ion-item>
+            <ion-label>FirstName:</ion-label>
+            <ion-input type="text" [(ngModel)]="regData.fname" required></ion-input>
+        </ion-item>
+        <ion-item>
+           <ion-label >LastName:</ion-label>
+           <ion-input type="text" [(ngModel)]="regData.lname" required></ion-input>
+        </ion-item>
+
+         <ion-item>
+            <ion-label floating>Email:</ion-label>
+            <ion-input type="Email" [(ngModel)]="regData.email" required></ion-input>
+        </ion-item> 
+       
+         <ion-item>
+           <ion-label floating>Password:</ion-label>
+           <ion-input type="password"[(ngModel)]="regData.password" required></ion-input>
+         </ion-item> 
+
+         <ion-list>
+          <ion-item class="function">
+            <ion-label>Role</ion-label>
+            <ion-select [(ngModel)]="regData.role">
+              <ion-option value="Admin">Admin</ion-option>
+              <ion-option value="Patient">Patient</ion-option>
+              <ion-option value="Personel">Personnel</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>  
+   
+   </div>
+  </ion-card-content>
+   </ion-card>
+   
+      <button ion-button class="submit-btn"  color="danger"  expand="block" (click)="register()" >
+          <ion-icon name="add-circle-outline"></ion-icon>
+        Add
+      </button>
+
+</ion-content>

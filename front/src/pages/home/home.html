@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="top">
+    <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Member Area
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content class="home" padding>
+   
+        <div class="list_card">
+          <ion-item class="profile-item">
+            <div class="profile-picture big-profile-picture">
+                <ion-avatar>
+                    <img src="{{imgPreview}}">
+                 </ion-avatar>
+            </div>
+            <h2 class="profile-name dark">{{fname}} {{lname}}</h2>
+            <div class="profile-info">Role :</div>
+            <h3>{{role}}</h3>
+            
+            <div class="profile-info">Email :</div>
+            <h3 >{{email}}</h3>
+          </ion-item>
+        </div>
+      
+
+</ion-content>
+
+
+
